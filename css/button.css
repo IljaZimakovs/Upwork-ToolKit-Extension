@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#EstimatedTimeBtn{
+    transform: scale(.7);
+        height: 52px !important;
+/*         padding:5px 10px !important; */
+        background-color: #ebeced;
+        border-radius:10px !important;
+        cursor: pointer !important;
+        font-size:16px !important;
+        display: inline-block ;
+        width: 135px;
+        position: fixed;
+        z-index: 10000;
+        top:10px;
+        left:30px;
+        box-shadow: 0px 0px 1px 0px #b2b4b5;
+}
+.ui-draggable{
+    cursor: move;
+}
+
+#EstimatedTimeBtn > span{
+ display: block !important;
+ position: absolute !important;
+ left: 45% !important;
+ top: 28% !important;
+ font-size: 16px !important;
+ font-weight: bold !important;
+ color: #475457;
+ font-family: 'Roboto', sans-serif !important;
+ 
+}
+#EstimatedTimeBtn > img{
+    display: block !important;
+    position: absolute !important;
+    top:13% !important;
+   left:10%;
+   max-width: 40px !important;
+   opacity: .75 !important;
+   }

@@ -1,0 +1,250 @@
+body {
+    width: 360px;
+    height: 320px;
+    display: block;
+    background: #98a9de;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden !important;
+}
+html{
+    width: 360px;
+    height: 320px;
+    overflow: hidden !important;
+}
+.dialogue{
+    color:#546e7a;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+a:visited, a:active {
+    color: initial;
+}
+
+.btnDone:visited , .btnDone:active {
+    color: #fff;
+}
+#dialogue1-b{
+     overflow: auto;
+
+}
+.nav-row{
+    height: 61px;
+    background: #f6f7f7;
+    padding-top: 6px;
+}
+
+.nav-row img {
+    max-height: 30.5px;
+    display: inline-block;
+    opacity: .4;
+    transition: .5s;
+}
+
+.nav-row > div {
+    cursor: pointer;
+}
+
+.nav-row > div:hover * {
+    opacity: .6;
+}
+.nav-row span {
+    max-height: 45px;
+    display: block;
+    margin-top: 2px;
+    opacity: .4;
+    transition: .5s;
+}
+.btnGo{
+    border-radius: 50%;
+    color: #fff;
+    background: #4db6ac;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 22px;
+    width: 86.5px;
+    height: 86.5px;
+    margin-top: 55px;
+    box-shadow: 0px 0px 3px 0px #bcbdbe;
+}
+.p-container{
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 0px;
+    text-align: justify;
+    color: black;
+    opacity: .7;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+p {
+    text-indent: 30px;
+}
+#dialogue3 h2 {
+    color: #101010;
+    opacity: .7;
+    /* text-decoration: underline; */
+}
+#dialogue3 h4 {
+    color:#222;
+    opacity: .8;
+}
+.btnGo:hover {
+
+    opacity: .8;
+    color: #ddd;
+}
+.btnGo:active, .btnGo:focus {
+    color:#fff;
+}
+.btnDone{
+    border-radius: 50%;
+    color: #fff;
+    background: #4db6ac;
+    font-size: 21px;
+    font-weight: bold;
+    /* padding: 10px; */
+    display: block;
+    width: 86.5px;
+    height: 86.5px;
+    position: absolute;
+    bottom: -39px;
+    padding: 16px;
+    left: 40%;
+    box-shadow: 0px 0px 2px 0px #979797;
+}
+
+#end:hover {
+    opacity: .8;
+}
+
+.btnClose {
+    color: #546e7a;
+    position: absolute;
+    bottom: 5px;
+    right: 6px;
+    font-weight: bold;
+    font-size: 12px;
+    opacity: .7;
+}
+.btnExclude {
+    color: #546e7a;
+    position: absolute;
+    bottom: 5px;
+    left: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    opacity: .7;
+}
+
+.activeNow > *{
+    opacity: .95 !important;
+}
+
+
+#addUrl{
+    max-width: 98%;
+    border: 0px;
+    box-shadow: none;
+}
+
+#websiteList {
+    list-style: none;
+}
+#addUrl .input-group{
+    height: 52px;
+}
+#addUrl .form-control{
+    width: 100%;
+    height: 52px;
+    /* border-left: 0px; */
+    margin: 4px;
+    display: inline-block;
+    border-radius: 0px 3px 3px 0px;
+}
+
+#tabTitle {
+    overflow: hidden;
+}
+#addUrl .btn{
+    height: 52px;
+    width: 80px;
+    border-radius: 3px 0px 0px 3px;
+    /* border-right: 0px; */
+    margin: 4px;
+}
+
+#addUrl .btn>i {
+    opacity: .7;
+}
+.one-site i {
+    font-size: 14px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.one-site{padding: 1px 0px;font-size: 13px;}
+
+
+#websiteList{
+    overflow: auto;
+    display: block;
+    max-height: 158px;
+}
+#websiteList::-webkit-scrollbar { 
+    display: none; 
+}
+#dialogue3 img{
+    max-height: 40px;
+    width: auto;
+    margin-top: 50px;
+    display: block;
+    opacity: .65;
+    cursor: pointer;
+}
+
+#dialogue3 span {
+    margin-top: 7px;
+    display: block;
+    font-size: 15px;
+    color: initial;
+    opacity: .6;
+}
+#btnUpdate{
+    width: 323px  !important;
+    margin-top: 10px  !important;
+    margin-right: -10px  !important;
+    margin-left: -2px  !important;
+}
+#notify{
+    color: #000;
+    position: relative;
+    top: -4px;
+}
+#countDownDown{
+    position: absolute;
+    bottom: 4px;
+    left: 16px;
+    color: #fff;
+}
+#countDownRefresh{position: absolute;bottom: 4px;right: 20px;color: #fff;}
+
+.upRight{
+    color:#fff;
+    position: absolute;
+    cursor: pointer;
+    top: 7px;
+    right: 16px;
+    background: #506496;
+    padding: 4px 4px;
+    border-radius: 3px;
+}
+.upLeft{
+    position: absolute;
+    color: #fff;
+    left: 24px;
+}
+.red
+{
+    background: #AD2D2D;
+}

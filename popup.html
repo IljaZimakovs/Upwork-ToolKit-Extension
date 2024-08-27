@@ -1,0 +1,78 @@
+<!doctype html>
+<!--
+   This page is shown when the extension button is clicked, because the
+   "browser_action" field in manifest.json contains the "default_popup" key with
+   value "popup.html".
+   -->
+<html>
+
+<head>
+    <title>Top Sharers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body dir="ltr">
+    <div class="container">
+        <div class="upRight ">
+               <span id="pause" class="" style=""> Pause</span>
+       </div>     
+      <!--   <div class="upLeft">
+               <span id="state" style=""> Running </span>
+       </div>    -->  
+        
+        <div class="row dialogue activeNow" id="dialogue2" align="center">
+            <div class="navbar-form" role="" id="addUrl">
+                <div class="input-group add-on">
+                   
+                    <div class="row">
+                        <div class="col-xs-3">
+                                <button class="btn btn-default addLink" data-toggle="tooltip" title="Select Current Tab" id="addTab" type="submit"><i class="glyphicon glyphicon-plus"></i></button>
+                            </div>
+                        <div class="col-xs-9">
+                            <span class="form-control" style="padding-top:10px;" id="tabTitle" data-toggle="tooltip" title="Chosen tab title" id="siteUrl" type="text"> Not Specified </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-7">
+                                <input class="form-control" id="filePath" data-toggle="tooltip" title="Enter file path relative to save folder for example if the folder is C:\Users\CORE\downloads\Files\Important\ , then the vlaue here should be Files\Important\ " placeholder="Path e.g: Folder1\temp\..\ " name="site" id="siteUrl" type="text">
+                            </div>
+
+                        <div class="col-xs-5">
+                                <input class="form-control" id="fileName" data-toggle="tooltip" title="file name ending with .html or .txt" placeholder="name.html or name.txt " name="site" id="siteUrl" type="text">
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                                <input class="form-control" id="saveInterval" type="number" data-toggle="tooltip" title="Enter save intervals in seconds e.g 5" placeholder="save interval" name="site" id="siteUrl" type="text">
+                            </div>
+
+                        <div class="col-xs-6">
+                                <input class="form-control" id="refreshInterval" type="number" data-toggle="tooltip" title="Enter page refresh rate in minutes e.g 60" placeholder="Refresh interval" name="site" id="siteUrl" type="text">
+                            </div>
+                    </div>
+                    
+                    <button class="btn btn-default " id="btnUpdate" data-toggle="tooltip" title="Update Settings" style="" type="submit"><i class="glyphicon glyphicon-refresh"></i></button>
+                </div>
+            </div>
+            <div align="">
+                <span id="countDownRefresh" style=""  data-toggle="tooltip" title="Refresh Countdown"> </span>
+                <span id="notify">  </span>
+                <span id="countDownDown" style=""  data-toggle="tooltip" title="Saving Countdown"> </span>
+            </div>
+         
+        </div>
+
+
+    </div>
+</body>
+
+</html>

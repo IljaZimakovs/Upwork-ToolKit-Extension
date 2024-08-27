@@ -1,0 +1,21 @@
+{
+   "background": {
+      "scripts": [ "js/jquery.min.js", "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/icon128.png",
+      "default_popup": "popup.html"
+   },
+   "description": " ",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAph7P+F3RAg8x/2zJR3Rjiy6SmIrkfT43AfQlRZYojOMGgKgr8oMcexMtfPoYmrilgkmnPdYDlBQ1OeFlPt7gff1kMga7G5tfJFCFLq/5wcgp+W24UlrYcO/Trad8vLdI8k2LG0gPlSfbU4H7YXKC9gntw0aCpfoNVRamSSeZRldTA2mDOsZj1hJEivUg5xt4yQp6dfk1M+kqSXanVnfaRHkZsPfprQBz56ZvQejRRSbaUHz35VG0UabILcYJT0qbvZ3OwIYNZnO4D/RgxRJMVo3CBKw/sSf0qiFYDl7NzGeaSN/YWqnACpzyjCIDwKYtQqYmBGXLAGTj+bfPyOY9kwIDAQAB",
+   "manifest_version": 2,
+   "name": "Autosave webpage",
+   "permissions": [ "activeTab", "downloads", "tabs", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2"
+}
