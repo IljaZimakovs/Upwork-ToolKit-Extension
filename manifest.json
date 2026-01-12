@@ -1,21 +1,29 @@
 {
+   "action": {
+      "default_icon": {
+         "38": "images/refresh-off-38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Easy Auto Refresh"
+   },
    "background": {
-      "scripts": [ "js/jquery.min.js", "js/background.js" ]
+      "service_worker": "scripts/background.js"
    },
-   "browser_action": {
-      "default_icon": "icons/icon128.png",
-      "default_popup": "popup.html"
-   },
-   "description": " ",
+   "content_scripts": [ {
+      "js": [ "scripts/keypress.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Auto-refresh and auto-reload pages after any number of seconds.",
+   "host_permissions": [ "http://*/", "https://*/" ],
    "icons": {
-      "128": "icons/icon128.png",
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png"
+      "128": "images/easy-auto-refresh-128x128.png",
+      "48": "images/easy-auto-refresh-48x48.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAph7P+F3RAg8x/2zJR3Rjiy6SmIrkfT43AfQlRZYojOMGgKgr8oMcexMtfPoYmrilgkmnPdYDlBQ1OeFlPt7gff1kMga7G5tfJFCFLq/5wcgp+W24UlrYcO/Trad8vLdI8k2LG0gPlSfbU4H7YXKC9gntw0aCpfoNVRamSSeZRldTA2mDOsZj1hJEivUg5xt4yQp6dfk1M+kqSXanVnfaRHkZsPfprQBz56ZvQejRRSbaUHz35VG0UabILcYJT0qbvZ3OwIYNZnO4D/RgxRJMVo3CBKw/sSf0qiFYDl7NzGeaSN/YWqnACpzyjCIDwKYtQqYmBGXLAGTj+bfPyOY9kwIDAQAB",
-   "manifest_version": 2,
-   "name": "Autosave webpage",
-   "permissions": [ "activeTab", "downloads", "tabs", "\u003Call_urls>" ],
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8XcAA4230CA2Z+eZhNxKqtDANfUX/6b8odE2kVDfKF5BtjvhdubT3UbZztZdZpEmcvC7SfMEq7qVJNfB1DGohr8xBAxCwqYTG8P+iq12dVh+8YEHg62Ug7xNvgnlcbPpqWRPbFK8XTC8A5ZP0CLNPzaAyUX7+FvqiTVmyeQU84wIDAQAB",
+   "manifest_version": 3,
+   "name": "Easy Auto Refresh",
+   "permissions": [ "tabs", "browsingData", "notifications", "storage", "scripting", "alarms", "downloads" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "0.2"
+   "version": "6.4"
 }

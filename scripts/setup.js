@@ -1,0 +1,1 @@
+/*Copyright (c) 2024 ksoft https://www.dummysoftware.com*/document.addEventListener("DOMContentLoaded",function(){onInitialize()});
